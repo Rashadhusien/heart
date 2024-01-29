@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(255 0 144);
+}
+
+.content {
+  background-color: #333;
+  color: white;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+.content .r-heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  top: -50px;
+  left: -103px;
+  border-radius: 60px 67px 0;
+  transition: 0.3s;
+  z-index: 5;
+}
+.content .l-heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 70px 63px 70px 0;
+  transition: 0.3s;
+  top: -50px;
+  left: 403px;
+  z-index: 5;
+}
+
+.content .py {
+  position: absolute;
+  width: 0px;
+  height: 0;
+  top: 400px;
+  left: 119px;
+  border: 81px solid;
+  border-color: red transparent transparent transparent;
+  transition: 0.3s;
+  z-index: 5;
+  border-radius: 0;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #333;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b2828;
+}
+
+.content h2 {
+  position: absolute;
+  color: #333;
+  left: 69px;
+  top: 10px;
+  font-size: 40px;
+  letter-spacing: 10.5px;
+  transition: 0.3s 0.4s ease;
+}
+
+.content h1 {
+  position: absolute;
+  color: #333;
+  top: 300px;
+  left: 107px;
+  letter-spacing: 4px;
+  font-size: 40px;
+  transition: 0.3s 0.4s ease;
+}
